@@ -13,6 +13,8 @@
 		841C523019FC40F2001C3CCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841C522E19FC40F2001C3CCE /* Main.storyboard */; };
 		841C523219FC40F2001C3CCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841C523119FC40F2001C3CCE /* Images.xcassets */; };
 		841C523E19FC40F3001C3CCE /* FaceDetectionSimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C523D19FC40F3001C3CCE /* FaceDetectionSimpleTests.m */; };
+		841C524819FC4197001C3CCE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841C524719FC4197001C3CCE /* CoreImage.framework */; };
+		841C524A19FC41CF001C3CCE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841C524919FC41CF001C3CCE /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		841C523719FC40F3001C3CCE /* FaceDetectionSimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectionSimpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841C523C19FC40F3001C3CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841C523D19FC40F3001C3CCE /* FaceDetectionSimpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionSimpleTests.m; sourceTree = "<group>"; };
+		841C524719FC4197001C3CCE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		841C524919FC41CF001C3CCE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841C524A19FC41CF001C3CCE /* MobileCoreServices.framework in Frameworks */,
+				841C524819FC4197001C3CCE /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,8 @@
 		841C521819FC40F2001C3CCE = {
 			isa = PBXGroup;
 			children = (
+				841C524919FC41CF001C3CCE /* MobileCoreServices.framework */,
+				841C524719FC4197001C3CCE /* CoreImage.framework */,
 				841C522319FC40F2001C3CCE /* FaceDetectionSimple */,
 				841C523A19FC40F3001C3CCE /* FaceDetectionSimpleTests */,
 				841C522219FC40F2001C3CCE /* Products */,
@@ -335,6 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FaceDetectionSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,6 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FaceDetectionSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
